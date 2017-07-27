@@ -109,34 +109,34 @@ class DataTablesProvider {
               <legend> <span class="label">Preferred copy type</span> <abbr title="(required)" class="required">*</abbr> <small class="hint">Would you like to receive a copy by email or a physical copy? Please note: Depending on what you request, the Email option is best, however if the number of items is high we may need to send a physical copy instead.</small> </legend>
               <ul class="choices compact">
                 <li>
-                  <input type="radio" name="attribute1" value="Email" required id="preferred-copy-type-email" ng-model="vm.selectedCopyType" ng-change="vm.changeOrderType()" />
+                  <input type="radio" name="preferred-copy-type" value="Email" required id="preferred-copy-type-email" ng-model="vm.selectedCopyType" ng-change="vm.changeOrderType()" />
                   <label for="preferred-copy-type-email">Email</label>
                 </li>
                 <li>
-                  <input type="radio" name="attribute1" value="Physical copy" required id="preferred-copy-type-physical-copy" ng-model="vm.selectedCopyType" ng-change="vm.changeOrderType()"" />
+                  <input type="radio" name="preferred-copy-type" value="Physical copy" required id="preferred-copy-type-physical-copy" ng-model="vm.selectedCopyType" ng-change="vm.changeOrderType()"" />
                   <label for="preferred-copy-type-physical-copy">Physical copy</label>
                 </li>
               </ul>
             </fieldset>
           </li>
-          <li ng-show="vm.validateAttribute2()">
+          <li ng-show="vm.validateCopyOption()">
             <fieldset>
               <legend> <span class="label">Physical copy options</span> <small class="hint relevance visuallyhidden">(If you chose &#x2018;Physical copy&#x2019; above)</small> <abbr title="(required)" class="required">*</abbr> <small class="hint">Would you like a photocopy, Printed photographic image (from scan) or a digital copy scanned to CD. Not all options are available for all media.</small> </legend>
               <ul class="choices compact">
                 <li>
-                  <input type="radio" name="attribute2" value="CD" ng-required="vm.validateAttribute2()" id="physical-copy-options-cd" ng-model="vm.selectedCopyOption" ng-change="vm.changeOrderType()" />
+                  <input type="radio" name="physical-copy-options" value="CD" ng-required="vm.validateCopyOption()" id="physical-copy-options-cd" ng-model="vm.selectedCopyOption" ng-change="vm.changeOrderType()" />
                   <label for="physical-copy-options-cd">CD</label>
                 </li>
                 <li>
-                  <input type="radio" name="attribute2" value="USB" ng-required="vm.validateAttribute2()" id="physical-copy-options-usb" ng-model="vm.selectedCopyOption" ng-change="vm.changeOrderType()" />
+                  <input type="radio" name="physical-copy-options" value="USB" ng-required="vm.validateCopyOption()" id="physical-copy-options-usb" ng-model="vm.selectedCopyOption" ng-change="vm.changeOrderType()" />
                   <label for="physical-copy-options-usb">USB</label>
                 </li>
                 <li>
-                  <input type="radio" name="attribute2" value="Printed photographic image" ng-required="vm.validateAttribute2()" id="physical-copy-options-printed-photographic-image" ng-model="vm.selectedCopyOption" ng-change="vm.changeOrderType()" />
+                  <input type="radio" name="physical-copy-options" value="Printed photographic image" ng-required="vm.validateCopyOption()" id="physical-copy-options-printed-photographic-image" ng-model="vm.selectedCopyOption" ng-change="vm.changeOrderType()" />
                   <label for="physical-copy-options-printed-photographic-image">Printed photographic image</label>
                 </li>
                 <li>
-                  <input type="radio" name="attribute2" value="Photocopy" ng-required="vm.validateAttribute2()" id="physical-copy-options-photocopy" ng-model="vm.selectedCopyOption" ng-change="vm.changeOrderType()" />
+                  <input type="radio" name="physical-copy-options" value="Photocopy" ng-required="vm.validateCopyOption()" id="physical-copy-options-photocopy" ng-model="vm.selectedCopyOption" ng-change="vm.changeOrderType()" />
                   <label for="physical-copy-options-photocopy">Photocopy</label>
                 </li>
               </ul>
@@ -213,17 +213,19 @@ class DataTablesProvider {
         </ol>
       </fieldset>
       <fieldset>
-        Quantity: <input type="text" name="quantity" value="1" id="quantity" size="2"/>
+        Quantity: <input type="text" name="quantity" value="1" id="quantity" size="2" ng-change="vm.changeOrderType()" ng-model="vm.quantity" />
       </fieldset>
       <fieldset ng-show="vm.price !== ''">
         Price: <span ng-bind="vm.price"></span>
       </fieldset>
 
+      <input type="hidden" name="attribute1" value="" ng-model="vm.attribute1" />
+      <input type="hidden" name="attribute2" value="" ng-model="vm.attribute2" />
       <input type="hidden" name="attribute3" value="${attribute3}" />
       <input type="hidden" class="productId" name="productId" ng-value="vm.productId" />
       <input type="hidden" name="redirectUrl" value="${redirectUrl}" />
       <input type="hidden" name="cartId" value="` + SSQ.cart.id + `" />
-      <input type="submit" value="Add To Cart" id="add-to-cart" ng-disabled="vm.validateAddToCart()" />
+      <input type="submit" value="Add To Cart" id="add-to-cart" ng-disabled="vm.validateAddToCart()" ng-click="vm.addToCart($event)" />
 <!--                            <a href=${urlLink}><button class="qsa-button">Order Online</button></a> -->
                            </form></td></tr>`;
 
