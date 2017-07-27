@@ -1,0 +1,233 @@
+ProductID,Title,Description,Reference,CostExGST,GST,DisbursementID,CostCenter,GLCode,TaxCode,Narrative,OnlineServiceCode,AllowChanges,BillingDetailsNameRequired,BillingDetailsPostRequired,BillingDetailsEmailRequired,BillingDetailsPhoneRequired,BillingDetailsFaxRequired,DeliveryPost,DeliveryEmail
+0009311a-66ce-45f6-a428-25eefcdea302,Boer War - Pay books (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+7ccd56f0-d884-4ab5-8081-192b6962645e,Boer War - Pay books (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+fb0e245d-33a2-4c05-b74e-91e3d15166b3,Boer War - Pay books (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+a079dbba-84d9-4b47-b215-0b4a852a6afc,Boer War - Pay books (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+612677ff-43dd-40e0-b30e-29c7f62d0d81,Brisbane Hospital Admissions 1872-1887 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+108cd67f-128d-4223-93af-353317d59def,Brisbane Hospital Admissions 1872-1887 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+62ed69c2-e869-4979-919d-41e43c6ac518,Brisbane Hospital Admissions 1872-1887 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+f340a428-256b-4f08-a423-04f265d607ed,Brisbane Hospital Admissions 1872-1887 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+cfa2849f-0a5d-480e-ac69-8a141ee6e6af,Brisbane Hospital Registers Deaths 1933-1963 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+9aded216-be46-48d5-b3c4-24618dc3a834,Brisbane Hospital Registers Deaths 1933-1963 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+b2154bc0-bb34-4ac8-8fff-71fc028d3fe8,Brisbane Hospital Registers Deaths 1933-1963  (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+6ca98731-3af8-44d5-a916-474a2f80c90d,Brisbane Hospital Registers Deaths 1933-1963 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+e3d5aee8-69e7-4887-9544-716beecb2bb3,Brisbane Hospital registers of deaths 1899-1913 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+6ec3e776-bbae-4133-bad3-518f06cc2df9,Brisbane Hospital registers of deaths 1899-1913 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+e1436e79-2d48-414c-8499-6d26dfc43e59,Brisbane Hospital registers of deaths 1899-1913 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+0126e802-40d4-4f3f-a6c1-1ece39976df8,Brisbane Hospital registers of deaths 1899-1913 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+1d42d686-2320-40a7-a448-62984151b017,Civil servants 1865-1867 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+414d74fa-6bd3-4523-9a38-2beaf7fb200b,Civil servants 1865-1867 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+df3cea49-25d4-4569-979b-0c3b53341ede,Civil servants 1865-1867 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+cc23e483-04ea-4fe3-8187-290da5568311,Civil servants 1865-1867 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+e2c0e81d-fb5e-43bd-95c0-f0676b5571be,Coloured labour and asiatic aliens in Queensland 1913 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+d7927797-652e-43e5-bf16-3cec0377e898,Coloured labour and asiatic aliens in Queensland 1913 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+37571ad9-e8da-4dfa-93bd-0001f01040ee,Coloured labour and asiatic aliens in Queensland 1913 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+df8fc925-3d64-4f21-bd7d-e01c91e22dbc,Coloured labour and asiatic aliens in Queensland 1913 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+6d4f7d57-08d7-450c-9443-3b058ecaeb2b,Companies 1863-1959 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+bf4426d0-951f-4e53-87b7-8f72cabb1d99,Companies 1863-1959 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+aaee4b7f-11e0-4493-9df1-3a0fa375241f,Companies 1863-1959 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+a7fc856c-4671-4bd2-815a-4ae72f9bd8af,Companies 1863-1959 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+e6c6cdb6-36f4-49d2-b19b-54b8f2e0388a,Consumptive patients index 1897-1902 (scanned copy sent via email),,,$16.86,$1.69,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+2f81b9fa-cbcf-4159-82e8-56c3d2e354f9,Consumptive patients index 1897-1902 (scanned to CD + postage),,,$24.64,$2.46,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+afb9447e-d8ae-44f4-b193-f5c29f6d4564,Consumptive patients index 1897-1902 (scanned to USB + postage),,,$31.41,$3.14,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+6894cfd6-a7df-411c-9bcf-ce7b26ddb86b,Consumptive patients index 1897-1902 (paper copy + postage),,,$19.91,$1.99,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+48ae4a51-62bc-4869-a2f5-bbbac6d92f93,Criminal depositions 1861-1885 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+3ca33f2a-eb65-4257-aafc-564e624f5fcd,Criminal depositions 1861-1885 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+a1d0be95-423f-4276-b413-e9fb2e86ea26,Criminal depositions 1861-1885 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+12774180-85d5-4876-ac97-4e825a0ce7fd,Criminal depositions 1861-1885 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+abacf22e-2e26-4fc6-b9aa-e94c2c4ee610,Dental Board 1900-1931 (scanned copy sent via email),,,$16.86,$1.69,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+34821c9e-a1f9-4d46-a04b-a11377ba4fd0,Dental Board 1900-1931 (scanned to CD + postage),,,$24.64,$2.46,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+9b168ce9-563f-4013-9e37-18047c942ca6,Dental Board 1900-1931 (scanned to USB + postage),,,$31.41,$3.14,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+bbbf9311-3db4-4c78-8e20-386e3c63a3b3,Dental Board 1900-1931 (paper copy + postage),,,$19.91,$1.99,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+d75905e3-4a07-4264-900a-dbfae4b9bcf7,Dentist Apprentices 1903-1925 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+a1b4d9fa-5572-4790-ac2c-0232522a5666,Dentist Apprentices 1903-1925 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+d651a8ac-e2bb-4d09-9e49-782e8239337e,Dentist Apprentices 1903-1925 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+57f1a880-9a43-45d7-9999-534079fa3b6c,Dentist Apprentices 1903-1925 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+dc52b65b-7903-4961-becd-b46b9ba96eaa,Dentists 1903-1932 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+d08b1937-9abd-41b0-b1f4-b57e638f6bf9,Dentists 1903-1932 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+27def622-87fc-4091-bb9e-a61332b77082,Dentists 1903-1932 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+f2529b36-62f3-47b3-be06-d2227bc6dd35,Dentists 1903-1932 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+d63ea9b8-a711-4cc3-af38-9dcad4846269,Divorces 1861-1894 (scanned copy sent via email),,,$16.86,$1.69,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+2f555d66-fd18-48d9-81f6-6897c67ce972,Divorces 1861-1894 (scanned to CD + postage),,,$24.64,$2.46,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+f018a563-98e7-4041-bfef-b323ce46e5cd,Divorces 1861-1894 (scanned to USB + postage),,,$31.41,$3.14,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+05d82772-3f2d-4823-9445-65024054d48c,Divorces 1861-1894 (paper copy + postage),,,$19.91,$1.99,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+1ebcedb2-420d-41d4-bdfe-3e808883ff51,Equity files 1857-1899 (scanned copy sent via email),,,$16.86,$1.69,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+96530932-9347-4967-9ba5-c35172c9e2cc,Equity files 1857-1899 (scanned to CD + postage),,,$24.64,$2.46,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+253715f8-4a2e-4a1b-9f0b-9c6ff4fd425c,Equity files 1857-1899 (scanned to USB + postage),,,$31.41,$3.14,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+1f7ba9b7-b794-4140-8f37-061a562a25d4,Equity files 1857-1899 (paper copy + postage),,,$19.91,$1.99,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+76f4261e-da71-4615-9f1f-8927a0f9c960,"Female prisoners admitted, Toowoomba 1887 to 1891 (scanned copy sent via email)",,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+ec329a8e-5792-4d8e-a874-51458a716d74,"Female prisoners admitted, Toowoomba 1887 to 1891 (scanned to CD + postage)",,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+6cb43b4a-a24e-4e1f-8d7c-a937b292180e,"Female prisoners admitted, Toowoomba 1887 to 1891 (scanned to USB + postage)",,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+9495a7b3-4066-459e-a074-9b2d80e130de,"Female prisoners admitted, Toowoomba 1887 to 1891 (paper copy + postage)",,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+602042d5-6aae-4007-9be2-c926a476c7f9,"Immigrants nominated for passage, Maryborough 1884 to 1896 (scanned copy sent via email)",,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+ef97c28e-6496-4771-8b0f-28e69848a7a7,"Immigrants nominated for passage, Maryborough 1884 to 1896 (scanned to CD + postage)",,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+5a24c67d-acd8-4cf6-9421-ff6c0d2c6c1f,"Immigrants nominated for passage, Maryborough 1884 to 1896 (scanned to USB + postage)",,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+4b7d36b5-9828-4d0b-b424-cefc6ad2d52b,"Immigrants nominated for passage, Maryborough 1884 to 1896 (paper copy + postage)",,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+6697edc2-a2f7-4337-9c4e-0e5b961a7c65,Immigration 1922-1940 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+c85f508c-3b7b-4fa6-a8b6-027f7a3e3ab2,Immigration 1922-1940 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+0b09cac9-f927-40e6-a294-d1ce45b65ff7,Immigration 1922-1940 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+7c2b6f59-356d-44e1-939f-6cb3062074fd,Immigration 1922-1940 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+6b077c59-4370-4f16-a385-26622405340f,Imperial pensions 1872-1915 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+b7075b12-71bc-47e4-bdce-c91cb1ff733c,Imperial pensions 1872-1915 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+19984340-be5c-4f1f-af76-6cc05dc9ed85,Imperial pensions 1872-1915 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+0b4a932c-f5c2-49e4-958b-68f08f5e8e5a,Imperial pensions 1872-1915 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+d335311e-fcb4-474c-8406-5c4d92400929,Imperial pensions 1898-1912 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+41503ca6-a0f5-4eab-8225-eadd5b306c32,Imperial pensions 1898-1912 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+485916bb-7901-45e7-bb44-1e9e7c376333,Imperial pensions 1898-1912 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+028d81e5-8f57-4864-98e7-7f0e122ceb7e,Imperial pensions 1898-1912 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+bb63e5d4-457e-4e74-8cd5-6ce73ea230be,Indigence cases 1899-1948 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+30a0391a-0cad-41c7-aaed-d8793b403155,Indigence cases 1899-1948 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+3fb490b4-5348-422b-a477-37e9cb30c397,Indigence cases 1899-1948 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+59340429-48d5-4e87-850b-1fd2867dc24d,Indigence cases 1899-1948 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+c108eb4d-fc03-4f8d-9ff6-4899b4dd2f98,Inquests 1859-1902 (scanned copy sent via email),,,$16.86,$1.69,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+9d87ed56-19cf-4c9b-80f5-ff4d1c649f89,Inquests 1859-1902 (scanned to CD + postage),,,$24.64,$2.46,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+dfe7bfc0-4f2c-40cd-98a7-f5bc07434474,Inquests 1859-1902  (scanned to USB + postage),,,$31.41,$3.14,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+8e467000-918f-4c05-9dc1-627c57dbef88,Inquests 1859-1902 (paper copy + postage),,,$19.91,$1.99,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+186e3daf-3ddb-4628-aeda-abb6a01469f6,Instruments of renunciation 1915-1983 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+80098c5b-3be3-4d36-b5f3-e61681faa550,Instruments of renunciation 1915-1983 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+4f4c0172-e5db-4959-a1ad-ec7f3ca9f3e4,Instruments of renunciation 1915-1983 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+6266fac8-a68d-4695-a964-f24fee23ca14,Instruments of renunciation 1915-1983 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+07aa5c1e-6006-4232-9b0f-8f9dfc2f3e66,Justices of the Peace 1857-1957 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+da03bbc5-88db-4684-aadb-97e12f6d43d6,Justices of the Peace 1857-1957 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+7df9a1d9-0a36-4217-869a-a16443176138,Justices of the Peace 1857-1957 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+d353dcd4-ed73-4a78-b9a5-9e50edca44b5,Justices of the Peace 1857-1957 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+06b4fa5b-14db-43f7-bdf7-1bd07b7f09fc,Land orders 1861-1874 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+9b70acf5-ff20-4594-9393-3bba268ca117,Land orders 1861-1874 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+b7c664ca-30e8-4df1-a3e9-2a7680c7db0e,Land orders 1861-1874 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+b85c2cb8-8403-4cd0-9901-9079991b5030,Land orders 1861-1874 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+0368be25-ea82-463c-8c71-50c1b02e9639,Land orders 1862-1878 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+26b24cdd-36c6-4687-9aaf-a521324008de,Land orders 1862-1878 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+307ad187-fb7f-481e-9465-e516f447f05f,Land orders 1862-1878 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+0bab780d-290e-46b9-8c1f-6dabd19cc1bf,Land orders 1862-1878 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+2c1dca2d-540b-4415-87a4-3746b25db3f6,Land Orders 1865 to 1866 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+65779e9d-cb93-40b4-90f3-ab79252dcc80,Land Orders 1865 to 1866 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+33f0094f-d70e-4c87-a14a-c66778d21491,Land Orders 1865 to 1866 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+1fdabc35-443d-48b2-885a-df921a9566dc,Land Orders 1865 to 1866 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+0c17bf4b-b3a7-4959-a051-dbf0f2852df2,Mackay Hospital Hospital Admissions 1891-1908 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+16f225ba-83d4-45d1-9b68-401844f3ff1c,Mackay Hospital Hospital Admissions 1891-1908 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+49aa4a06-b7fe-435d-94f8-836eb0b3e55d,Mackay Hospital Hospital Admissions 1891-1908 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+86b8cf2b-a839-44a0-8f77-c5ca0c91ab67,Mackay Hospital Hospital Admissions 1891-1908 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+596eb9a4-fbb7-4b12-b517-b17f5ecd760a,Military Service Records 1899 to 1901 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+127a205c-5d2d-4e1b-bcb6-0e87964a7182,Military Service Records 1899 to 1901 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+5cab5285-0319-4498-8cbc-9aa5ef710725,Passport clearances 1923-1940 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+62dae12e-c9e6-4091-9b15-40f0d2f75c02,Military Service Records 1899 to 1901 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+f46ad026-ef00-450a-b447-87af4ba54a5a,Military Service Records 1899 to 1901 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+acf229d2-38a2-4728-b21e-037a6309d69d,Mineral leases 1871-1940 (scanned copy sent via email),,,$16.86,$1.69,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+ab34bedc-b458-4159-bfc7-5505b6c3ff4e,Mineral leases 1871-1940 (scanned to CD + postage),,,$24.64,$2.46,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+e9fb37fd-2921-47b2-919d-c3cbba1286ae,Mineral leases 1871-1940 (scanned to USB + postage),,,$31.41,$3.14,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+462c4823-08c1-4b22-bbc5-e2d580225098,Mineral leases 1871-1940 (paper copy + postage),,,$19.91,$1.99,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+f066bb46-b02f-40bb-a8b2-48d3c937acf7,Miners rights 1874-1880 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+2a7d5368-73da-4c1c-9682-0a23ba8c3fe3,Miners rights 1874-1880 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+678b0ab1-3faa-4b85-a66c-530636f942a5,Miners rights 1874-1880 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+4b291c6b-a178-44ca-84c7-7b57f84dea88,Miners rights 1874-1880 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+9793ea4a-3ba9-4b2b-a475-b7471f2de246,Naturalisations 1851-1908 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+a5aa0831-81a4-4bf5-817f-84b535f4ebae,Naturalisations 1851-1908 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+fa62aee7-b1aa-4fdd-9c82-3158f36a145f,Naturalisations 1851-1908 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+94df8b87-45d6-4759-a060-476183c45f60,Naturalisations 1851-1908 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+fb4b3142-fb2b-4687-bdba-886fe7fb101e,Nominated immigrants 1908-1922 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+fe4e2bdd-4f2d-4bad-b5f3-ff262397f91c,Nominated immigrants 1908-1922 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+fe2e7d83-9334-443d-8cfa-b06c937485f7,Nominated immigrants 1908-1922 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+d0d94a48-7f82-43ca-8273-a23285e8c619,Nominated immigrants 1908-1922 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+fb8cdd9a-7424-498f-a4de-1e798bae5bda,"Nominated immigrants, Maryborough 1904 to 1907 (scanned copy sent via email)",,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+6c9cd03e-b112-488d-bf6d-332cccaf5c9f,"Nominated immigrants, Maryborough 1904 to 1907 (scanned to CD + postage)",,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+2da2814c-b3c8-4981-b470-e5333e993606,"Nominated immigrants, Maryborough 1904 to 1907 (scanned to USB + postage)",,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+4dc15ad7-ee30-4630-bb72-f96b9f8f58fb,"Nominated immigrants, Maryborough 1904 to 1907 (paper copy + postage)",,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+d1cd8af1-8ab8-4cd6-9173-5ca08f0aa38a,Nurses examinations 1912-1925 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+9abaa43d-c82a-4b59-9c81-32fd6cba028a,Nurses examinations 1912-1925 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+cda548e1-838a-4efb-bf73-606911f57945,Nurses examinations 1912-1925 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+6e7f1312-ce19-4eda-9714-329c9a636389,Nurses examinations 1912-1925 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+1466eb48-f9a7-4931-9619-b71fca65965b,Oronsay immigration 1925-1972 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+f8a943de-5a61-49c9-aac2-26dab2f8f3e2,Oronsay immigration 1925-1972 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+12b9157e-a62c-415c-8a03-4bab3f0879f2,Oronsay immigration 1925-1972 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+f2aee983-ad8b-482a-94bc-2b14d196e7fb,Oronsay immigration 1925-1972 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+bcec80cf-dc94-46b3-96e8-c19e088d7f90,Passage certificates 1887-1906 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+ec823ca1-3d8e-4b76-840a-944c54ed6084,Passage certificates 1887-1906 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+60da9982-0ec6-490e-8414-edabffd157f8,Passage certificates 1887-1906 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+7f2c52b9-2385-4dbb-966f-2bf0b83bdf78,Passage certificates 1887-1906 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+0422c25d-c019-4f42-b832-4a4e5f029543,Passport clearances 1923-1940 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+f4607e2b-829d-42bd-8252-7fdd8a3f3934,Passport clearances 1923-1940 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+fc740d97-275c-4108-bd1e-6979ae64f061,Passport clearances 1923-1940 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+91d354f7-8339-4a37-aa9b-fd39f3f1fec3,"Prisoners admitted, Toowoomba 1895 to 1906 (scanned copy sent via email)",,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+484b47c9-615c-4f34-b44c-93be423cd447,"Prisoners admitted, Toowoomba 1895 to 1906 (scanned to CD + postage)",,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+d169cdbc-9d70-43a7-8c15-181073f1a257,"Prisoners admitted, Toowoomba 1895 to 1906 (scanned to USB + postage)",,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+9c4ce23e-373a-46c3-ad14-d755dd326977,"Prisoners admitted, Toowoomba 1895 to 1906 (paper copy + postage)",,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+e366d395-b1c3-4d01-a110-5950773f6e24,"Prisoners discharged, Toowoomba 1869-1879 (scanned copy sent via email)",,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+0513936d-d48b-455c-8419-1e603a01d4b2,"Prisoners discharged, Toowoomba 1869-1879 (scanned to CD + postage)",,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+92ff27e1-a8a5-4c70-b148-2ef3d86e6451,"Prisoners discharged, Toowoomba 1869-1879 (scanned to USB + postage)",,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+60f16e78-3e76-4c36-8103-31c9e90bfbb3,"Prisoners discharged, Toowoomba 1869-1879 (paper copy + postage)",,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+c44ae161-99af-4737-92c4-82c64605855e,"Prisoners tried, Toowoomba 1864 to 1903 (scanned copy sent via email)",,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+091d3be9-1a96-424a-85db-d55ab945b5a8,"Prisoners tried, Toowoomba 1864 to 1903 (scanned to CD + postage)",,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+a804849b-779c-4345-ad25-ff0e20bb2e86,"Prisoners tried, Toowoomba 1864 to 1903 (scanned to USB + postage)",,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+e5fde7ad-96e4-4912-841a-e10ae97d0c45,"Prisoners tried, Toowoomba 1864 to 1903 (paper copy + postage)",,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+740fe5a4-47a4-43d9-9202-534e81df9b84,"Rations issued to immigrants, Maryborough 1875-1884 (scanned copy sent via email)",,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+554f3247-c4ee-43ab-b13a-0a783aa46395,"Rations issued to immigrants, Maryborough 1875-1884 (scanned to CD + postage)",,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+d1d1760f-4df3-47c5-a9d7-f624d6eb0004,"Rations issued to immigrants, Maryborough 1875-1884 (scanned to USB + postage)",,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+c2fcb1f3-330b-49c9-a7b5-f05205676411,"Rations issued to immigrants, Maryborough 1875-1884 (paper copy + postage)",,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+df522684-18fb-49a5-8344-6e546f210862,Register of court fees 1885-1908 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+0ae7f499-db0f-42c1-b9ec-3446f630fae6,Register of court fees 1885-1908 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+81bf978b-1e8c-4e9a-a7b6-c48536d6fd66,Register of court fees 1885-1908 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+af75c2da-b846-49f9-9674-39abbea6dba3,Register of court fees 1885-1908 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+ef260c51-032d-4af0-a33a-d04594a01b12,Register of Immigrants 1864-1878 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+d7b44fea-e346-4729-b4a9-06125438f61b,Register of Immigrants 1864-1878 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+02ff2ebe-a75f-43c1-a582-46aa98ff05eb,Register of Immigrants 1864-1878 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+4f082c6d-6490-47bb-b055-f6c9e8388683,Register of Immigrants 1864-1878 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+ea485fbd-cce7-4af5-ad37-52e4bf4ce4e3,"Register of immigrants, Toowoomba, 1880-1888 (scanned copy sent via email)",,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+8cfd8ad0-6681-4941-8642-90a5e78b2866,"Register of immigrants, Toowoomba, 1880-1888 (scanned to CD + postage)",,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+ff8e62db-34c6-4228-ac0e-9d90888574a2,"Register of immigrants, Toowoomba, 1880-1888 (scanned to USB + postage)",,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+dd555796-0c4e-4d5e-915e-454465ef59ff,"Register of immigrants, Toowoomba, 1880-1888 (paper copy + postage)",,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+7be18ca0-4394-45c6-abb8-6bacca56af4f,Register of land sold 1842-1859 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+9e7b5abf-4b06-42b6-9134-0d6cf1ba0eed,Register of land sold 1842-1859 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+3a86c34b-b43c-45a6-af72-a39112467c09,Register of land sold 1842-1859 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+7f79c8fd-cf37-4268-acf4-f8318dce1c86,Register of land sold 1842-1859 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+6c4527bb-1d5a-498b-a862-7f946d9bc0fc,Register of lands 1861-1868 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+05cfac36-e9e1-4028-ad70-c369e286f7e8,Register of lands 1861-1868 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+84dcfa0b-f070-4259-93d5-b046fcfde903,Register of lands 1861-1868 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+af3ffea0-9140-47c9-bc00-7ccdfad961eb,Register of lands 1861-1868 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+2fa803fc-79df-40aa-aa29-f6c35855b669,Register of lands sold 1849-1861 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+101b48e7-fa35-4833-8920-183833778dd5,Register of lands sold 1849-1861 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+f403737d-20ad-4e27-a71d-5b906523e22c,Register of lands sold 1849-1861 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+c0fa1acc-f77a-48e2-b858-7b5f36240f51,Register of lands sold 1849-1861 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+1a793d06-62b7-432b-8fe6-b593976238a8,Register of Pastoral Holdings 1863-1880 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+5ff80615-bb59-4121-8056-42e989ad768b,Register of Pastoral Holdings 1863-1880 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+cefaeecc-eb8b-407e-b336-174dff4c7d84,Register of Pastoral Holdings 1863-1880 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+ee3c8c58-b45c-4e09-9afb-de6d4f83ab9b,Register of Pastoral Holdings 1863-1880 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+1459eb43-a5ca-4e27-8450-cc5190bc000e,Register of Seamen 1882-1919 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+ae0ada43-ffd0-44c6-8fe7-bc896fea95aa,Register of Seamen 1882-1919 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+bbf443b2-d4d6-469c-988d-2e0f42dafe9c,Register of Seamen 1882-1919 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+42f95ee5-d198-4d56-8592-102b91706be5,Register of Seamen 1882-1919 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+7cd3949d-2a5e-4ee7-8dfe-7d4ec1c73102,Registers of immigrants 1882-1938 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+9ac4ced3-3a43-4cb5-9b70-2125dfccfffe,Registers of immigrants 1882-1938 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+24a4933e-d26e-4262-a334-7450830cde1c,Registers of immigrants 1882-1938 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+e5d6c1dd-8042-4e6b-9f2b-d15e6c4b27b6,Registers of immigrants 1882-1938 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+8b53adf6-1d36-4847-9115-5579ee10803a,"Registers of immigrants, Brisbane 1885-1917 (scanned copy sent via email)",,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+9d306cf5-bd52-4ea3-9a3a-0d3d988abd2a,"Registers of immigrants, Brisbane 1885-1917 (scanned to CD + postage)",,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+261bb7b2-e7b4-4634-9add-f247023fb241,"Registers of immigrants, Brisbane 1885-1917 (scanned to USB + postage)",,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+4413234d-28c3-416d-91b2-95947c90a1be,"Registers of immigrants, Brisbane 1885-1917 (paper copy + postage)",,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+4e2af08e-4add-4106-9d3b-1788a840b251,Rents Payable Pastoral Runs Index 1860-1911 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+b43d14a0-6447-49cc-876c-50a4d54c8e63,Rents Payable Pastoral Runs Index 1860-1911 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+2488b087-e104-468c-92a2-9b140f61c889,Rents Payable Pastoral Runs Index 1860-1911 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+593d56f2-4057-4828-93f4-37823e76a308,Rents Payable Pastoral Runs Index 1860-1911 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+fb58ed73-c486-4f47-9cc9-c6131a01db26,Soldier Settlement 1917-1929 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+4f551300-8ec0-48d6-89ac-bb70d497b2e1,Soldier Settlement 1917-1929 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+311faf72-cdfc-47dd-91e7-cfc1e6044f3f,Soldier Settlement 1917-1929 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+de17eafd-24bc-40a4-9f67-bf798608cbf0,Soldier Settlement 1917-1929 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+c0025405-fd91-4d6a-b795-b1da8f89c711,St Helena prisoners 1863-1936 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+2346585d-c4ee-4b86-9fb8-74766e14ff00,St Helena prisoners 1863-1936 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+3ec29835-86ea-474d-9bee-c08fd767aa74,St Helena prisoners 1863-1936 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+e967f171-efc7-45a1-b969-40d40752efbd,St Helena prisoners 1863-1936 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+d0f385e4-280b-41d4-8e2d-1e2e7c200da3,Teachers 1860-1905 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+0d8e63ef-5ca7-41f8-b634-dc0215ce56e9,Teachers 1860-1905 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+612e2324-48ab-41c9-a7a2-5bd464da2058,Teachers 1860-1905 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+d7d88e1b-1788-4822-b8a3-e92b368527a4,Teachers 1860-1905 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+ca7b9c06-467c-4c94-8e83-545776b47d85,Transfer of runs 1848-1874 (scanned copy sent via email),,,$6.27,$0.63,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+5c2d42fe-d87c-414a-88a7-6851c1ea7e5c,Transfer of runs 1848-1874 (scanned to CD + postage),,,$14.05,$1.40,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+099e24cf-01b9-4062-a19d-1b8a938c7003,Transfer of runs 1848-1874 (scanned to USB + postage),,,$20.82,$2.08,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+a70acefe-1072-4799-8a85-9117dd21fa1d,Transfer of runs 1848-1874 (paper copy + postage),,,$9.32,$0.93,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+602604a6-dc8d-4669-b0f8-66f1e8c77a29,Trustee files 1889-1929 (scanned copy sent via email),,,$16.86,$1.69,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+99d2185b-9615-43a9-8333-604a865627d4,Trustee files 1889-1929 (scanned to CD + postage),,,$24.64,$2.46,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+d32f2324-685b-412c-85ae-3ccc78d41795,Trustee files 1889-1929 (scanned to USB + postage),,,$31.41,$3.14,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+1fbbaafc-7a40-4513-98d0-d66f1ad3e763,Trustee files 1889-1929 (paper copy + postage),,,$19.91,$1.99,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+3f618f62-71fd-4128-8e51-c68388c73bb0,Wills 1857-1940 (scanned copy sent via email),,,$16.86,$1.69,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE
+317c39a8-dc04-40d8-b4ec-eaf567aeed83,Wills 1857-1940 (scanned to CD + postage),,,$24.64,$2.46,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+20ceae73-359f-40f1-bf61-6ef09b653f26,Wills 1857-1940 (scanned to USB + postage),,,$31.41,$3.14,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE
+36803025-3dc8-4d3e-ad54-af1bd696891a,Wills 1857-1940 (paper copy + postage),,,$19.91,$1.99,2793,1050010,415066,SG,,qsapr,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,TRUE,FALSE

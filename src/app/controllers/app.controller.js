@@ -1,5 +1,6 @@
 class AppCtrl {
     categories = {};
+    products = {};
     showWarning = false;
     showFilterWarning = false;
     showClearResearchButton = false;
@@ -11,6 +12,16 @@ class AppCtrl {
     selectedIndex = {};
     resultCategoryName = '';
     resultIndexName = '';
+    selectedCopyType = '';
+    selectedCopyOption = '';
+    selectedResolution = '';
+    selectedImageOption = '';
+    selectedPhotocopyOption = '';
+    selectedFileTypeJpg = false;
+    selectedFileTypePdf = false;
+    selectedFileTypeTiff = false;
+    productId = '';
+    price = '';
     warningHeader = '';
     warningMessage = '';
     datatableId = 'qsa-result-table';
@@ -20,9 +31,14 @@ class AppCtrl {
         display: 'none'
     };
 
-    constructor(CategoryService, DataTablesProvider, $timeout) {
+    constructor(ProductService, CategoryService, DataTablesProvider, $timeout) {
+        this.ProductService = ProductService;
         this.CategoryService = CategoryService;
         this.DataTablesProvider = DataTablesProvider;
+
+        this.ProductService.getProducts((products) => {
+            this.products = products;
+        });
 
         this.CategoryService.getCategories((categories) => {
             this.categories = categories;
@@ -54,6 +70,123 @@ class AppCtrl {
         this.selectedIndex = this.selectedCategory.indexes[indexKey];
         this.filters = this.getFilters(this.selectedIndex.searchable);
         this.scrollTo('search-by');
+    }
+
+    changeOrderType() {
+        if ( ! this.selectedCopyType) {
+            return
+        }
+        if (this.selectedCopyType !== 'Physical copy') {
+            this.selectedCopyOption = '';
+        }
+        if ( !  RegExp.quote) {
+            RegExp.quote = function(str) {
+                return str.replace(/([.?*+^$[\]\\(){}|-])/g, "\\$1");
+            };
+        }
+        let productFound = false;
+        for (let i = 0; i < this.products.records.length; i++) {
+            let re = new RegExp('^' + RegExp.quote(this.selectedIndex.indexName), 'g');
+            if (this.products.records[i].Title.match(re) !== null) {
+                /*
+                console.log(
+                    'matched',
+                    this.products.records[i],
+                    `selectedCopyType: ${this.selectedCopyType}`,
+                    `selectedCopyOption: ${this.selectedCopyOption}`,
+                    `DeliveryEmail: ${this.products.records[i].DeliveryEmail}`,
+                    `DeliveryPost: ${this.products.records[i].DeliveryPost}`
+                );
+                */
+                if (this.selectedCopyType === 'Email') {
+                    if (this.products.records[i].DeliveryEmail === 'TRUE') {
+                        productFound = this.products.records[i];
+                        break;
+                    }
+                }
+                if (this.selectedCopyType === 'Physical copy') {
+                    if (this.products.records[i].DeliveryPost === 'TRUE') {
+                        if ((this.selectedCopyOption === 'CD') && (this.products.records[i].Title.match(/to CD/g) !== null)) {
+                            productFound = this.products.records[i];
+                            break;
+                        }
+                        if ((this.selectedCopyOption === 'USB') && (this.products.records[i].Title.match(/to USB/g) !== null)) {
+                            productFound = this.products.records[i];
+                            break;
+                        }
+                        if ((this.selectedCopyOption === 'Printed photographic image') && (this.products.records[i].Title.match(/paper copy/g) !== null)) {
+                            productFound = this.products.records[i];
+                            break;
+                        }
+                        if ((this.selectedCopyOption === 'Photocopy') && (this.products.records[i].Title.match(/paper copy/g) !== null)) {
+                            productFound = this.products.records[i];
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        if (productFound) {
+            // console.log('Found Product', productFound);
+            this.productId = productFound.ProductID;
+            this.price = productFound.CostExGST;
+            // productFound.GST
+        } else {
+            this.productId = '';
+            this.price = '';
+        }
+    }
+
+    validateAttribute2() {
+        return (this.selectedCopyType === 'Physical copy');
+    }
+    validateFileType() {
+        if (this.validateAttribute2()) {
+            switch (this.selectedCopyOption) {
+                case 'CD':
+                case 'USB':
+                    return ( ! this.selectedFileTypeJpg && ! this.selectedFileTypePdf && ! this.selectedFileTypeTiff);
+                    break;
+                default:
+                    return false;
+            }
+        } else {
+            return false;
+        }
+    }
+    validateResolution() {
+        if (this.validateAttribute2()) {
+            switch (this.selectedCopyOption) {
+                case 'CD':
+                case 'USB':
+                    return true;
+                    break;
+                default:
+                    return false;
+            }
+        } else {
+            return false;
+        }
+    }
+    validateImageOption() {
+        if (this.validateAttribute2()) {
+            if (this.selectedCopyOption === 'Printed photographic image') {
+                return true;
+            }
+        }
+        return false;
+    }
+    validatePhotocopyOption() {
+        if (this.validateAttribute2()) {
+            if (this.selectedCopyOption === 'Photocopy') {
+                return true;
+            }
+        }
+        return false;
+    }
+    validateAddToCart() {
+// @todo Return true if the mandatory field is empty when selecting "CD" or "USB" as you have to select "File type" etc
+        return (this.price.length === 0);
     }
 
     getIndexIdentifier(categoryKey, indexKey) {
@@ -119,6 +252,10 @@ class AppCtrl {
                             this.resultCategoryName = this.selectedCategory.categoryName;
                             this.resultIndexName = this.selectedIndex.indexName;
                             this.scrollTo('result-block');
+                        },
+                        () => {
+                            this.selectedCopyType = '';
+                            this.selectedCopyOption = '';
                         });
 
                     if (!renderSuccess) {
@@ -160,7 +297,17 @@ class AppCtrl {
         this.selectedIndexKey = '';
         this.selectedIndex = {};
         this.resultCategoryName = '';
+        this.selectedResolution = '';
+        this.selectedImageOption = '';
+        this.selectedPhotocopyOption = '';
+        this.selectedFileTypeJpg = false;
+        this.selectedFileTypePdf = false;
+        this.selectedFileTypeTiff = false;
+        this.productId = '';
+        this.price = '';
         this.resultIndexName = '';
+        this.selectedCopyType = '';
+        this.selectedCopyOption = '';
         this.filters = [];
         this.suggestions = [];
         this.searchResultStyle.display = 'none';
@@ -168,6 +315,6 @@ class AppCtrl {
     }
 }
 
-AppCtrl.$inject = ['CategoryService', 'DataTablesProvider', '$timeout'];
+AppCtrl.$inject = ['ProductService', 'CategoryService', 'DataTablesProvider', '$timeout'];
 
 export default AppCtrl;
