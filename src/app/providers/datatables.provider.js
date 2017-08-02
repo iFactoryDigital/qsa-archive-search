@@ -121,7 +121,7 @@ class DataTablesProvider {
           </li>
           <li ng-show="vm.validateCopyOption()">
             <fieldset>
-              <legend> <span class="label">Physical copy options</span> <small class="hint relevance visuallyhidden">(If you chose &#x2018;Physical copy&#x2019; above)</small> <abbr title="(required)" class="required">*</abbr> <small class="hint">Would you like a photocopy, Printed photographic image (from scan) or a digital copy scanned to CD. Not all options are available for all media.</small> </legend>
+              <legend> <span class="label">Physical copy options</span> <small class="hint relevance visuallyhidden">(If you chose &#x2018;Physical copy&#x2019; above)</small> <abbr title="(required)" class="required">*</abbr> <small class="hint">Would you like a photocopy or a digital copy scanned to CD. Not all options are available for all media.</small> </legend>
               <ul class="choices compact">
                 <li>
                   <input type="radio" name="physical-copy-options" value="CD" ng-required="vm.validateCopyOption()" id="physical-copy-options-cd" ng-model="vm.selectedCopyOption" ng-change="vm.changeOrderType()" />
@@ -130,10 +130,6 @@ class DataTablesProvider {
                 <li>
                   <input type="radio" name="physical-copy-options" value="USB" ng-required="vm.validateCopyOption()" id="physical-copy-options-usb" ng-model="vm.selectedCopyOption" ng-change="vm.changeOrderType()" />
                   <label for="physical-copy-options-usb">USB</label>
-                </li>
-                <li>
-                  <input type="radio" name="physical-copy-options" value="Printed photographic image" ng-required="vm.validateCopyOption()" id="physical-copy-options-printed-photographic-image" ng-model="vm.selectedCopyOption" ng-change="vm.changeOrderType()" />
-                  <label for="physical-copy-options-printed-photographic-image">Printed photographic image</label>
                 </li>
                 <li>
                   <input type="radio" name="physical-copy-options" value="Photocopy" ng-required="vm.validateCopyOption()" id="physical-copy-options-photocopy" ng-model="vm.selectedCopyOption" ng-change="vm.changeOrderType()" />
@@ -160,21 +156,6 @@ class DataTablesProvider {
                </li>
              </ul>
            </fieldset>
-          </li>
-          <li ng-show="(vm.selectedCopyOption === 'Printed photographic image')">
-            <fieldset>
-              <legend> <span class="label">Printed photographic image options</span> <small class="hint relevance visuallyhidden">(If you chose ‘Printed photographic image’ above)</small> <abbr title="(required)" class="required">*</abbr> </legend>
-              <ul class="choices compact">
-                <li>
-                  <input type="radio" name="printed-photographic-image-options" value="5x7 (12.5x18cm)" required id="printed-photographic-image-options-5x7-12-5x18cm" ng-required="vm.validateImageOption()" ng-model="vm.selectedImageOption" />
-                  <label for="printed-photographic-image-options-5x7-12-5x18cm">5x7 (12.5x18cm)</label>
-                </li>
-                <li>
-                  <input type="radio" name="printed-photographic-image-options" value="8x10 (20x25cm)" required id="printed-photographic-image-options-8x10-20x25cm" ng-required="vm.validateImageOption()" ng-model="vm.selectedImageOption" />
-                  <label for="printed-photographic-image-options-8x10-20x25cm">8x10 (20x25cm)</label>
-                </li>
-              </ul>
-            </fieldset>
           </li>
           <li ng-show="(vm.selectedCopyOption === 'Photocopy')">
             <fieldset>

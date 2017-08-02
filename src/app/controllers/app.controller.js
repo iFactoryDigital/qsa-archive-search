@@ -20,7 +20,6 @@ class AppCtrl {
     selectedCopyType = '';
     selectedCopyOption = '';
     selectedResolution = '';
-    selectedImageOption = '';
     selectedPhotocopyOption = '';
     selectedFileTypeJpg = false;
     selectedFileTypePdf = false;
@@ -118,10 +117,6 @@ class AppCtrl {
                             this.productFound = this.products.records[i];
                             break;
                         }
-                        if ((this.selectedCopyOption === 'Printed photographic image') && (this.products.records[i].Title.match(/paper copy/g) !== null)) {
-                            this.productFound = this.products.records[i];
-                            break;
-                        }
                         if ((this.selectedCopyOption === 'Photocopy') && (this.products.records[i].Title.match(/paper copy/g) !== null)) {
                             this.productFound = this.products.records[i];
                             break;
@@ -182,14 +177,6 @@ class AppCtrl {
             return false;
         }
     }
-    validateImageOption() {
-        if (this.validateCopyOption()) {
-            if (this.selectedCopyOption === 'Printed photographic image') {
-                return true;
-            }
-        }
-        return false;
-    }
     validatePhotocopyOption() {
         if (this.validateCopyOption()) {
             if (this.selectedCopyOption === 'Photocopy') {
@@ -226,9 +213,6 @@ class AppCtrl {
                             selectedResolution = this.selectedResolution;
                         }
                         selectedAttributes.push(`Option: ${this.selectedCopyOption} (File Type: ${selectedFileTypes.join(', ')}; Resolution: ${selectedResolution})`);
-                        break;
-                    case 'Printed photographic image':
-                        selectedAttributes.push(`Option: ${this.selectedCopyOption} (${this.selectedImageOption})`);
                         break;
                     case 'Photocopy':
                         selectedAttributes.push(`Option: ${this.selectedCopyOption} (${this.selectedPhotocopyOption})`);
@@ -362,7 +346,6 @@ class AppCtrl {
         this.selectedIndex = {};
         this.resultCategoryName = '';
         this.selectedResolution = '';
-        this.selectedImageOption = '';
         this.selectedPhotocopyOption = '';
         this.selectedFileTypeJpg = false;
         this.selectedFileTypePdf = false;
