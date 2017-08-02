@@ -100,7 +100,7 @@ class DataTablesProvider {
             urlLink += `&itemTitle=${encodeURIComponent(index.itemTitleField)}`;
 
         // Display an Order Online button
-        extraInfo += `</ul><form class="form form-button" action="https://test.smartservice.qld.gov.au/services/prodi/addProduct" method="post">
+        extraInfo += `</ul><form class="form form-button order-form" action="https://test.smartservice.qld.gov.au/services/prodi/addProduct" method="post">
       <fieldset>
         <legend> <span class="h2">Copy type</span> <small class="hint relevance visuallyhidden">(If you chose &#x2018;Yes&#x2019; above)</small> </legend>
         <ol class="questions">
@@ -232,7 +232,7 @@ class DataTablesProvider {
         return extraInfo;
     }
 
-    renderTable(index, columns, data, drawCallback, preClickCallback) {
+    renderTable(index, columns, data, drawCallback, preClickCallback, postRender) {
         if (!(this.tableId && typeof this.tableId === 'string' && this.tableId.length > 0)) {
             console.error('Datatable Id is not defined');
             return false;
@@ -297,6 +297,7 @@ class DataTablesProvider {
                     let scope = angular.element(tr).scope();
                     angular.element(row.node()).after($compile(extraInfo)(scope));
                     scope.$digest();
+                    if (postRender) postRender();
                     tr.addClass('shown');
                 });
             }

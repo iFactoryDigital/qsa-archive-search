@@ -1,3 +1,8 @@
+if ( ! RegExp.quote) {
+    RegExp.quote = function(str) {
+        return str.replace(/([.?*+^$[\]\\(){}|-])/g, "\\$1");
+    };
+}
 class AppCtrl {
     categories = {};
     products = {};
@@ -83,11 +88,6 @@ class AppCtrl {
         if (this.selectedCopyType !== 'Physical copy') {
             this.selectedCopyOption = '';
         }
-        if ( ! RegExp.quote) {
-            RegExp.quote = function(str) {
-                return str.replace(/([.?*+^$[\]\\(){}|-])/g, "\\$1");
-            };
-        }
         this.productFound = false;
         for (let i = 0; i < this.products.records.length; i++) {
             let re = new RegExp('^' + RegExp.quote(this.selectedIndex.indexName), 'g');
@@ -142,6 +142,15 @@ class AppCtrl {
         }
     }
 
+    validateProduct() {
+        for (let i = 0; i < this.products.records.length; i++) {
+            let re = new RegExp('^' + RegExp.quote(this.selectedIndex.indexName), 'g');
+            if (this.products.records[i].Title.match(re) !== null) {
+                return true;
+            }
+        }
+        return false;
+    }
     validateCopyOption() {
         return (this.selectedCopyType === 'Physical copy');
     }
@@ -190,7 +199,6 @@ class AppCtrl {
         return false;
     }
     validateAddToCart() {
-// @todo Return true if the mandatory field is empty when selecting "CD" or "USB" as you have to select "File type" etc
         return (this.price.length === 0);
     }
     addToCart($event) {
@@ -306,7 +314,13 @@ class AppCtrl {
                         () => {
                             this.selectedCopyType = '';
                             this.selectedCopyOption = '';
-                        });
+                        },
+                        () => {
+                            if ( ! this.validateProduct()) { // Disable to show the order form if no product data is found in CSV file
+                                angular.element('.order-form').hide();
+                            }
+                        },
+                    );
 
                     if (!renderSuccess) {
                         this.searchResultStyle.display = 'none';
