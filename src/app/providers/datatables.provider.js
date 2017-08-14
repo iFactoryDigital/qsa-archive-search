@@ -65,6 +65,7 @@ class DataTablesProvider {
         //--As a part of order online button--
         let urlLink = "../request-form/index.html?checkbox=1&search=1";
         let attribute3;
+        let person;
         const redirectUrl = 'https://test.smartservice.qld.gov.au/services/test/prodi/products';
 
         if (!data['INDEX NAME']) data['INDEX NAME'] = 'No index name provided';
@@ -95,6 +96,7 @@ class DataTablesProvider {
         // --As a part of order online button--
         urlLink += `&resource_id=${data['RESOURCE ID']}`;
         attribute3 = `https://www.qld.gov.au/dsiti/qsa/request-form/index-result/index.html?resource_id=${data['RESOURCE ID']}&_id=${data['ITEM ID']}`;
+        person = data['GIVEN NAME/S'];
 
         if (index.itemTitleField.trim() !== '')
             urlLink += `&itemTitle=${encodeURIComponent(index.itemTitleField)}`;
@@ -150,10 +152,6 @@ class DataTablesProvider {
                  <input type="checkbox" name="file-type-pdf" ng-model="vm.selectedFileTypePdf" value="PDF" id="file-type-pdf" />
                  <label for="file-type-pdf">PDF</label>
                </li>
-               <li>
-                 <input type="checkbox" name="file-type-tiff" ng-model="vm.selectedFileTypeTiff" value="TIFF" id="file-type-tiff" />
-                 <label for="file-type-tiff">TIFF</label>
-               </li>
              </ul>
            </fieldset>
           </li>
@@ -172,25 +170,6 @@ class DataTablesProvider {
               </ul>
             </fieldset>
           </li>
-          <li ng-show="(vm.selectedCopyOption === 'CD') || (vm.selectedCopyOption === 'USB')">
-            <fieldset>
-              <legend> <span class="label">Resolution</span> <small class="hint relevance visuallyhidden">(If you chose ‘CD or USB’ above)</small> <abbr title="(required)" class="required">*</abbr> <small class="hint">Standard resolution is 300ppi (pixels per inch)</small> </legend>
-              <ul class="choices compact">
-                <li>
-                  <input type="radio" name="resolution" value="Standard" ng-required="vm.validateResolution()" id="resolution-standard" ng-model="vm.selectedResolution" />
-                  <label for="resolution-standard">Standard</label>
-                </li>
-                <li>
-                  <input type="radio" name="resolution" value="Other" ng-required="vm.validateResolution()" id="resolution-other" ng-model="vm.selectedResolution" />
-                  <label for="resolution-other">Other</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset ng-show="vm.selectedResolution === 'Other'">
-              <legend> <span class="label">Other resolution</span> <small class="hint relevance visuallyhidden">(If you chose ‘Other’ above)</small> <abbr title="(required)" class="required">*</abbr> <small class="hint">Only required if you prefer a resolution other than standard 300ppi (pixels per inch)</small> </legend>
-              <input type="text" name="other-resolution" size="20" ng-required="vm.selectedResolution === 'Other'" id="other-resolution" />
-            </fieldset>
-          </li>
         </ol>
       </fieldset>
       <fieldset>
@@ -203,6 +182,7 @@ class DataTablesProvider {
       <input type="hidden" name="attribute1" value="" ng-model="vm.attribute1" />
       <input type="hidden" name="attribute2" value="" ng-model="vm.attribute2" />
       <input type="hidden" name="attribute3" value="${attribute3}" />
+      <input type="hidden" name="person" value="${person}" />
       <input type="hidden" class="productId" name="productId" ng-value="vm.productId" />
       <input type="hidden" name="redirectUrl" value="${redirectUrl}" />
       <input type="hidden" name="cartId" value="` + SSQ.cart.id + `" />

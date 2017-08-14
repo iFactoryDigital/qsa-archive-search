@@ -19,11 +19,9 @@ class AppCtrl {
     resultIndexName = '';
     selectedCopyType = '';
     selectedCopyOption = '';
-    selectedResolution = '';
     selectedPhotocopyOption = '';
     selectedFileTypeJpg = false;
     selectedFileTypePdf = false;
-    selectedFileTypeTiff = false;
     productId = '';
     quantity = '1';
     price = '';
@@ -154,21 +152,7 @@ class AppCtrl {
             switch (this.selectedCopyOption) {
                 case 'CD':
                 case 'USB':
-                    return ( ! this.selectedFileTypeJpg && ! this.selectedFileTypePdf && ! this.selectedFileTypeTiff);
-                    break;
-                default:
-                    return false;
-            }
-        } else {
-            return false;
-        }
-    }
-    validateResolution() {
-        if (this.validateCopyOption()) {
-            switch (this.selectedCopyOption) {
-                case 'CD':
-                case 'USB':
-                    return true;
+                    return ( ! this.selectedFileTypeJpg && ! this.selectedFileTypePdf);
                     break;
                 default:
                     return false;
@@ -192,11 +176,11 @@ class AppCtrl {
 
         let selectedAttributes = [];
         let selectedFileTypes = [];
-        let selectedResolution = '';
         let form = angular.element($event.target).parents('form');
 
         if (this.productFound) {
 
+            selectedAttributes.push('GIVEN NAME/S: ' + form.find('[name="person"]').val());
             selectedAttributes.push('Type: ' + this.selectedCopyType);
 
             if (this.selectedCopyType === 'Physical copy') {
@@ -206,13 +190,7 @@ class AppCtrl {
                     case 'USB':
                         if (this.selectedFileTypeJpg) selectedFileTypes.push(form.find('[name="file-type-jpg"]').val());
                         if (this.selectedFileTypePdf) selectedFileTypes.push(form.find('[name="file-type-pdf"]').val());
-                        if (this.selectedFileTypeTiff) selectedFileTypes.push(form.find('[name="file-type-tiff"]').val());
-                        if (this.selectedResolution === 'Other') {
-                            selectedResolution = `${this.selectedResolution} (${form.find('[name="other-resolution"]').val()})`;
-                        } else {
-                            selectedResolution = this.selectedResolution;
-                        }
-                        selectedAttributes.push(`Option: ${this.selectedCopyOption} (File Type: ${selectedFileTypes.join(', ')}; Resolution: ${selectedResolution})`);
+                        selectedAttributes.push(`Option: ${this.selectedCopyOption} (File Type: ${selectedFileTypes.join(', ')}`);
                         break;
                     case 'Photocopy':
                         selectedAttributes.push(`Option: ${this.selectedCopyOption} (${this.selectedPhotocopyOption})`);
@@ -345,11 +323,9 @@ class AppCtrl {
         this.selectedIndexKey = '';
         this.selectedIndex = {};
         this.resultCategoryName = '';
-        this.selectedResolution = '';
         this.selectedPhotocopyOption = '';
         this.selectedFileTypeJpg = false;
         this.selectedFileTypePdf = false;
-        this.selectedFileTypeTiff = false;
         this.productId = '';
         this.quantity = '1';
         this.price = '';
