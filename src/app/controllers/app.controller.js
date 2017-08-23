@@ -92,7 +92,8 @@ class AppCtrl {
             // console.log('Found Product', this.productFound);
             this.productId = this.productFound.ProductID;
             // this.price = this.productFound.CostExGST * this.quantity;
-            this.price = '$' + parseFloat(this.productFound.CostExGST.replace(/\$/g, '')) * this.quantity;
+            this.price = '$' + parseFloat(this.productFound.TOTAL.replace(/\$/g, '')) * this.quantity;
+            // this.productFound.CostExGST
             // this.productFound.GST
             // this.productFound.TOTAL
         } else {
