@@ -17,17 +17,10 @@ class AppCtrl {
     selectedIndex = {};
     resultCategoryName = '';
     resultIndexName = '';
-    selectedCopyType = '';
-    selectedCopyOption = '';
-    selectedPhotocopyOption = '';
-    selectedFileTypeJpg = false;
-    selectedFileTypePdf = false;
     productId = '';
     quantity = '1';
     price = '';
     productFound = false;
-    attribute1 = '';
-    attribute2 = '';
     warningHeader = '';
     warningMessage = '';
     datatableId = 'qsa-result-table';
@@ -79,12 +72,6 @@ class AppCtrl {
     }
 
     changeOrderType() {
-        if ( ! this.selectedCopyType) {
-            return
-        }
-        if (this.selectedCopyType !== 'Physical copy') {
-            this.selectedCopyOption = '';
-        }
         this.productFound = false;
         for (let i = 0; i < this.products.records.length; i++) {
             let re = new RegExp('^' + RegExp.quote(this.selectedIndex.indexName), 'g');
@@ -93,34 +80,12 @@ class AppCtrl {
                 console.log(
                     'matched',
                     this.products.records[i],
-                    `selectedCopyType: ${this.selectedCopyType}`,
-                    `selectedCopyOption: ${this.selectedCopyOption}`,
                     `DeliveryEmail: ${this.products.records[i].DeliveryEmail}`,
                     `DeliveryPost: ${this.products.records[i].DeliveryPost}`
                 );
                 */
-                if (this.selectedCopyType === 'Email') {
-                    if (this.products.records[i].DeliveryEmail === 'TRUE') {
-                        this.productFound = this.products.records[i];
-                        break;
-                    }
-                }
-                if (this.selectedCopyType === 'Physical copy') {
-                    if (this.products.records[i].DeliveryPost === 'TRUE') {
-                        if ((this.selectedCopyOption === 'CD') && (this.products.records[i].Title.match(/to CD/g) !== null)) {
-                            this.productFound = this.products.records[i];
-                            break;
-                        }
-                        if ((this.selectedCopyOption === 'USB') && (this.products.records[i].Title.match(/to USB/g) !== null)) {
-                            this.productFound = this.products.records[i];
-                            break;
-                        }
-                        if ((this.selectedCopyOption === 'Photocopy') && (this.products.records[i].Title.match(/paper copy/g) !== null)) {
-                            this.productFound = this.products.records[i];
-                            break;
-                        }
-                    }
-                }
+                this.productFound = this.products.records[i];
+                break;
             }
         }
         if (this.productFound) {
@@ -129,6 +94,7 @@ class AppCtrl {
             // this.price = this.productFound.CostExGST * this.quantity;
             this.price = '$' + parseFloat(this.productFound.CostExGST.replace(/\$/g, '')) * this.quantity;
             // this.productFound.GST
+            // this.productFound.TOTAL
         } else {
             this.productId = '';
             this.price = '';
@@ -144,67 +110,11 @@ class AppCtrl {
         }
         return false;
     }
-    validateCopyOption() {
-        return (this.selectedCopyType === 'Physical copy');
-    }
-    validateFileType() {
-        if (this.validateCopyOption()) {
-            switch (this.selectedCopyOption) {
-                case 'CD':
-                case 'USB':
-                    return ( ! this.selectedFileTypeJpg && ! this.selectedFileTypePdf);
-                    break;
-                default:
-                    return false;
-            }
-        } else {
-            return false;
-        }
-    }
-    validatePhotocopyOption() {
-        if (this.validateCopyOption()) {
-            if (this.selectedCopyOption === 'Photocopy') {
-                return true;
-            }
-        }
-        return false;
-    }
     validateAddToCart() {
         return (this.price.length === 0);
     }
     addToCart($event) {
-
-        let selectedAttributes = [];
-        let selectedFileTypes = [];
-        let form = angular.element($event.target).parents('form');
-
-        if (this.productFound) {
-
-            selectedAttributes.push('GIVEN NAME/S: ' + form.find('[name="person"]').val());
-            selectedAttributes.push('Type: ' + this.selectedCopyType);
-
-            if (this.selectedCopyType === 'Physical copy') {
-
-                switch (this.selectedCopyOption) {
-                    case 'CD':
-                    case 'USB':
-                        if (this.selectedFileTypeJpg) selectedFileTypes.push(form.find('[name="file-type-jpg"]').val());
-                        if (this.selectedFileTypePdf) selectedFileTypes.push(form.find('[name="file-type-pdf"]').val());
-                        selectedAttributes.push(`Option: ${this.selectedCopyOption} (File Type: ${selectedFileTypes.join(', ')}`);
-                        break;
-                    case 'Photocopy':
-                        selectedAttributes.push(`Option: ${this.selectedCopyOption} (${this.selectedPhotocopyOption})`);
-                        break;
-                    default:
-                }
-            }
-
-            this.attribute1 = selectedAttributes.join(', ');
-            form.find('[name="attribute1"]').val(this.attribute1);
-
-        } else {
-            this.attribute1 = '';
-            this.attribute2 = '';
+        if ( ! this.productFound) {
             $event.preventDefault();
         }
     }
@@ -265,7 +175,10 @@ class AppCtrl {
 
                     let columns = this.DataTablesProvider.setColumns(this.selectedIndex.primary);
 
-                    let renderSuccess = this.DataTablesProvider.renderTable(this.selectedIndex, columns, data.records,
+                    let renderSuccess = this.DataTablesProvider.renderTable(
+                        this.selectedIndex,
+                        columns,
+                        data.records,
                         () => {
                             this.isSearching = false;
                             this.showClearResearchButton = true;
@@ -274,17 +187,17 @@ class AppCtrl {
                             this.scrollTo('result-block');
                         },
                         () => {
-                            this.selectedCopyType = '';
-                            this.selectedCopyOption = '';
-                        },
-                        () => {
-                            if ( ! this.validateProduct()) { // Disable to show the order form if no product data is found in CSV file
+                            if ( ! this.validateProduct()) {
+                                // Disable to show the order form if no product data is found in CSV file
                                 angular.element('.order-form').hide();
                             }
-                        },
+                        }
                     );
 
-                    if (!renderSuccess) {
+                    if (renderSuccess) {
+                        // Show the base price if the product is found in CSV file
+                        this.changeOrderType();
+                    } else {
                         this.searchResultStyle.display = 'none';
                         this.displayWarning('Cannot Display Results', 'Please contact QSA');
                     }
@@ -323,18 +236,11 @@ class AppCtrl {
         this.selectedIndexKey = '';
         this.selectedIndex = {};
         this.resultCategoryName = '';
-        this.selectedPhotocopyOption = '';
-        this.selectedFileTypeJpg = false;
-        this.selectedFileTypePdf = false;
         this.productId = '';
         this.quantity = '1';
         this.price = '';
         this.productFound = false;
-        this.attribute1 = '';
-        this.attribute2 = '';
         this.resultIndexName = '';
-        this.selectedCopyType = '';
-        this.selectedCopyOption = '';
         this.filters = [];
         this.suggestions = [];
         this.searchResultStyle.display = 'none';

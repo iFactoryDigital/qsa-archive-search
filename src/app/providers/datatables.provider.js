@@ -64,8 +64,9 @@ class DataTablesProvider {
 
         //--As a part of order online button--
         let urlLink = "../request-form/index.html?checkbox=1&search=1";
+        let attribute1;
+        let attribute2;
         let attribute3;
-        let person;
         const redirectUrl = 'https://test.smartservice.qld.gov.au/services/test/prodi/products';
 
         if (!data['INDEX NAME']) data['INDEX NAME'] = 'No index name provided';
@@ -95,8 +96,10 @@ class DataTablesProvider {
         });
         // --As a part of order online button--
         urlLink += `&resource_id=${data['RESOURCE ID']}`;
-        attribute3 = `https://www.qld.gov.au/dsiti/qsa/request-form/index-result/index.html?resource_id=${data['RESOURCE ID']}&_id=${data['ITEM ID']}`;
-        person = data['GIVEN NAME/S'];
+
+        attribute1 = data['GIVEN NAME/S'];
+        attribute2 = data['ITEM ID'];
+        attribute3 = data['SOURCE'];
 
         if (index.itemTitleField.trim() !== '')
             urlLink += `&itemTitle=${encodeURIComponent(index.itemTitleField)}`;
@@ -104,85 +107,15 @@ class DataTablesProvider {
         // Display an Order Online button
         extraInfo += `</ul><form class="form form-button order-form" action="https://test.smartservice.qld.gov.au/services/prodi/addProduct" method="post">
       <fieldset>
-        <legend> <span class="h2">Copy type</span> <small class="hint relevance visuallyhidden">(If you chose &#x2018;Yes&#x2019; above)</small> </legend>
-        <ol class="questions">
-          <li>
-            <fieldset>
-              <legend> <span class="label">Preferred copy type</span> <abbr title="(required)" class="required">*</abbr> <small class="hint">Would you like to receive a copy by email or a physical copy? Please note: Depending on what you request, the Email option is best, however if the number of items is high we may need to send a physical copy instead.</small> </legend>
-              <ul class="choices compact">
-                <li>
-                  <input type="radio" name="preferred-copy-type" value="Email" required id="preferred-copy-type-email" ng-model="vm.selectedCopyType" ng-change="vm.changeOrderType()" />
-                  <label for="preferred-copy-type-email">Email</label>
-                </li>
-                <li>
-                  <input type="radio" name="preferred-copy-type" value="Physical copy" required id="preferred-copy-type-physical-copy" ng-model="vm.selectedCopyType" ng-change="vm.changeOrderType()"" />
-                  <label for="preferred-copy-type-physical-copy">Physical copy</label>
-                </li>
-              </ul>
-            </fieldset>
-          </li>
-          <li ng-show="vm.validateCopyOption()">
-            <fieldset>
-              <legend> <span class="label">Physical copy options</span> <small class="hint relevance visuallyhidden">(If you chose &#x2018;Physical copy&#x2019; above)</small> <abbr title="(required)" class="required">*</abbr> <small class="hint">Would you like a photocopy or a digital copy scanned to CD. Not all options are available for all media.</small> </legend>
-              <ul class="choices compact">
-                <li>
-                  <input type="radio" name="physical-copy-options" value="CD" ng-required="vm.validateCopyOption()" id="physical-copy-options-cd" ng-model="vm.selectedCopyOption" ng-change="vm.changeOrderType()" />
-                  <label for="physical-copy-options-cd">CD</label>
-                </li>
-                <li>
-                  <input type="radio" name="physical-copy-options" value="USB" ng-required="vm.validateCopyOption()" id="physical-copy-options-usb" ng-model="vm.selectedCopyOption" ng-change="vm.changeOrderType()" />
-                  <label for="physical-copy-options-usb">USB</label>
-                </li>
-                <li>
-                  <input type="radio" name="physical-copy-options" value="Photocopy" ng-required="vm.validateCopyOption()" id="physical-copy-options-photocopy" ng-model="vm.selectedCopyOption" ng-change="vm.changeOrderType()" />
-                  <label for="physical-copy-options-photocopy">Photocopy</label>
-                </li>
-              </ul>
-            </fieldset>
-          </li>
-          <li ng-show="(vm.selectedCopyOption === 'CD') || (vm.selectedCopyOption === 'USB')">
-           <fieldset id="name1">
-             <legend> <span class="label">File type</span> <small class="hint relevance visuallyhidden">(If you chose &#x2018;CD or USB&#x2019; above)</small> </legend>
-             <ul class="choices">
-               <li>
-                 <input type="checkbox" ng-required="vm.validateFileType()" ng-model="vm.selectedFileTypeJpg" name="file-type-jpg" value="JPG" id="file-type-jpg" />
-                 <label for="file-type-jpg">JPG</label>
-               </li>
-               <li>
-                 <input type="checkbox" name="file-type-pdf" ng-model="vm.selectedFileTypePdf" value="PDF" id="file-type-pdf" />
-                 <label for="file-type-pdf">PDF</label>
-               </li>
-             </ul>
-           </fieldset>
-          </li>
-          <li ng-show="(vm.selectedCopyOption === 'Photocopy')">
-            <fieldset>
-              <legend> <span class="label">Photocopy options</span> <small class="hint relevance visuallyhidden">(If you chose ‘Photocopy’ above)</small> <abbr title="(required)" class="required">*</abbr> </legend>
-              <ul class="choices compact">
-                <li>
-                  <input type="radio" name="photocopy-options" value="Colour" required id="photocopy-options-colour" ng-required="vm.validatePhotocopyOption()" ng-model="vm.selectedPhotocopyOption" />
-                  <label for="photocopy-options-colour">Colour</label>
-                </li>
-                <li>
-                  <input type="radio" name="photocopy-options" value="Black and white (Grayscale)" required id="photocopy-options-black-and-white-grayscale" ng-required="vm.validatePhotocopyOption()" ng-model="vm.selectedPhotocopyOption" />
-                  <label for="photocopy-options-black-and-white-grayscale">Black and white (Grayscale)</label>
-                </li>
-              </ul>
-            </fieldset>
-          </li>
-        </ol>
-      </fieldset>
-      <fieldset>
         Quantity: <input type="text" name="quantity" value="1" id="quantity" size="2" ng-change="vm.changeOrderType()" ng-model="vm.quantity" />
       </fieldset>
       <fieldset ng-show="vm.price !== ''">
         Price: <span ng-bind="vm.price"></span>
       </fieldset>
 
-      <input type="hidden" name="attribute1" value="" ng-model="vm.attribute1" />
-      <input type="hidden" name="attribute2" value="" ng-model="vm.attribute2" />
+      <input type="hidden" name="attribute1" value="${attribute1}" />
+      <input type="hidden" name="attribute2" value="${attribute2}" />
       <input type="hidden" name="attribute3" value="${attribute3}" />
-      <input type="hidden" name="person" value="${person}" />
       <input type="hidden" class="productId" name="productId" ng-value="vm.productId" />
       <input type="hidden" name="redirectUrl" value="${redirectUrl}" />
       <input type="hidden" name="cartId" value="` + SSQ.cart.id + `" />
@@ -193,7 +126,7 @@ class DataTablesProvider {
         return extraInfo;
     }
 
-    renderTable(index, columns, data, drawCallback, preClickCallback, postRender) {
+    renderTable(index, columns, data, drawCallback, postRender) {
         if (!(this.tableId && typeof this.tableId === 'string' && this.tableId.length > 0)) {
             console.error('Datatable Id is not defined');
             return false;
@@ -247,7 +180,6 @@ class DataTablesProvider {
                     angular.element(trTmp).removeClass('shown');
                 }
             });
-            if (preClickCallback) preClickCallback();
 
             if (angular.element(tr).next().hasClass('detailedInfoRow')) {
                 angular.element(tr).next().remove();
