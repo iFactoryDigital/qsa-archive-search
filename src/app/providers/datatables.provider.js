@@ -45,7 +45,7 @@ class DataTablesProvider {
 
                     return data;
                 }
-            }
+            };
 
             return [...allColumns, column];
         }, [firstColumn]);
@@ -82,11 +82,16 @@ class DataTablesProvider {
         Object.keys(data).sort().forEach((key) => {
             if (excludedFields.indexOf(key) < 0) {
                 let formatedKey = key.charAt(0).toUpperCase() + key.substr(1).toLowerCase();
-
-                extraInfo += `<li><b>${formatedKey}</b><ul><li>${data[key]}</li></ul></li>`;
+                let value = '';
+                if (key === 'SOURCE') {
+                    value = `<a href="${data[key]}" target="_blank">${data[key]}</a>`;
+                } else {
+                    value = data[key];
+                }
+                extraInfo += `<li><b>${formatedKey}</b><ul><li>${value}</li></ul></li>`;
             }
             // --As a part of order online button--
-            if (key == '_ID') {
+            if (key === '_ID') {
                 let formatedKeyId = key.replace(/\w\S*/g, (txt) => {
                     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
                 });

@@ -3,6 +3,7 @@ if ( ! RegExp.quote) {
         return str.replace(/([.?*+^$[\]\\(){}|-])/g, "\\$1");
     };
 }
+
 class AppCtrl {
     categories = {};
     products = {};
@@ -71,6 +72,10 @@ class AppCtrl {
         this.scrollTo('search-by');
     }
 
+    formatCurrency(value) {
+        return '$' + value.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+    }
+
     changeOrderType() {
         this.productFound = false;
         for (let i = 0; i < this.products.records.length; i++) {
@@ -92,7 +97,7 @@ class AppCtrl {
             // console.log('Found Product', this.productFound);
             this.productId = this.productFound.ProductID;
             // this.price = this.productFound.CostExGST * this.quantity;
-            this.price = '$' + parseFloat(this.productFound.TOTAL.replace(/\$/g, '')) * this.quantity;
+            this.price = this.formatCurrency(parseFloat(this.productFound.TOTAL.replace(/\$/g, '')) * this.quantity);
             // this.productFound.CostExGST
             // this.productFound.GST
             // this.productFound.TOTAL
