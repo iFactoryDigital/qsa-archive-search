@@ -33,7 +33,7 @@ class CategoryService {
         });
     }
 
-    // Map capatalised field names with actual field names
+    // Map capitalised field names with actual field names
     mapFieldKeys(filters, fields) {
         return filters.reduce((map, filter) => {
             for (let field of fields) {
@@ -116,13 +116,10 @@ class CategoryService {
     }
 
     formatAutocompleteQueries(resources, filters, targetField) {
-        let queries = resources.reduce((queries, resource) => {
+        return resources.reduce((queries, resource) => {
             let query = this.formatAutocompleteQuery(resource.resourceId, filters, targetField);
-
             return [...queries, query];
         }, []);
-
-        return queries;
     }
 
     // Get 1 row in the resource to use the fields array
@@ -170,7 +167,7 @@ class CategoryService {
         // Separate successful and failed results
         let pushResult = (result) => {
             result.data.success ? successResults.push(result) : failedResults.push(result);
-        }
+        };
 
         // Make an API call for each resource
         let requests = queries.map((query) => {

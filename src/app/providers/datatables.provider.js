@@ -81,23 +81,23 @@ class DataTablesProvider {
         // Display all fields other than excluded fields
         Object.keys(data).sort().forEach((key) => {
             if (excludedFields.indexOf(key) < 0) {
-                let formatedKey = key.charAt(0).toUpperCase() + key.substr(1).toLowerCase();
+                let formattedKey = key.charAt(0).toUpperCase() + key.substr(1).toLowerCase();
                 let value = '';
                 if (key === 'SOURCE') {
                     value = `<a href="${data[key]}" target="_blank">${data[key]}</a>`;
                 } else {
                     value = data[key];
                 }
-                extraInfo += `<li><b>${formatedKey}</b><ul><li>${value}</li></ul></li>`;
+                extraInfo += `<li><b>${formattedKey}</b><ul><li>${value}</li></ul></li>`;
             }
             // --As a part of order online button--
             if (key === '_ID') {
-                let formatedKeyId = key.replace(/\w\S*/g, (txt) => {
+                let formattedKeyId = key.replace(/\w\S*/g, (txt) => {
                     return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
                 });
-                urlLink += `&${formatedKeyId}=${data[key]}`;
+                urlLink += `&${formattedKeyId}=${data[key]}`;
             }
-            // -- End OnlineButn--
+            // -- End OnlineButton--
         });
         // --As a part of order online button--
         urlLink += `&resource_id=${data['RESOURCE ID']}`;

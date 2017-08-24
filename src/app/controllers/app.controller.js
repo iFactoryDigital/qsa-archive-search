@@ -25,6 +25,7 @@ class AppCtrl {
     warningHeader = '';
     warningMessage = '';
     datatableId = 'qsa-result-table';
+    filtersPrevious = [];
     filters = [];
     suggestions = [];
     searchResultStyle = {
@@ -55,10 +56,15 @@ class AppCtrl {
         }, 500);
     }
 
+    rememberFilters() {
+        if (this.filters.length > 0) this.filtersPrevious = this.filters;
+    }
+
     changeCategory() {
         this.showWarning = false;
         this.showFilterWarning = false;
         this.selectedCategory = this.categories[this.selectedCategoryKey];
+        this.rememberFilters();
         this.filters = [];
         this.selectedIndex = {};
         this.selectedIndexKey = '';
@@ -68,6 +74,7 @@ class AppCtrl {
         this.showWarning = false;
         this.showFilterWarning = false;
         this.selectedIndex = this.selectedCategory.indexes[indexKey];
+        this.rememberFilters();
         this.filters = this.getFilters(this.selectedIndex.searchable);
         this.scrollTo('search-by');
     }
@@ -132,10 +139,17 @@ class AppCtrl {
     // Create filter objects based on definition in categories.js
     getFilters(searchable) {
         return searchable.map((searchableField) => {
+            let value = '';
+            for (let filter of this.filtersPrevious) {
+                if (filter.field.trim() === searchableField.trim()) {
+                    value = filter.value.trim();
+                    break;
+                }
+            }
             return {
                 field: searchableField,
-                value: ''
-            }
+                value: value
+            };
         });
     }
 
@@ -247,6 +261,7 @@ class AppCtrl {
         this.price = '';
         this.productFound = false;
         this.resultIndexName = '';
+        this.filtersPrevious = [];
         this.filters = [];
         this.suggestions = [];
         this.searchResultStyle.display = 'none';
