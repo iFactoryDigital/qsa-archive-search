@@ -161,6 +161,7 @@ class DataTablesProvider {
                 search: 'Refine search:'
             },
             order: [
+                [2, 'asc'],
                 [1, 'asc']
             ],
             drawCallback: (settings) => {
