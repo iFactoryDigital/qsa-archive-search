@@ -42,6 +42,14 @@ class AppCtrl {
         });
 
         this.CategoryService.getCategories((categories) => {
+            Object.keys(categories).forEach((categoryKey) => {
+                Object.keys(categories[categoryKey].indexes).forEach((indexKey) => {
+                    const resourceId = categories[categoryKey].indexes[indexKey].resources[0].resourceId;
+                    this.CategoryService.getResourceFieldValues(resourceId, (result) => {
+                        categories[categoryKey].indexes[indexKey].description = result.records[0].Description;
+                    });
+                });
+            });
             this.categories = categories;
         });
 
@@ -134,6 +142,10 @@ class AppCtrl {
 
     getIndexIdentifier(categoryKey, indexKey) {
         return `${categoryKey}_${indexKey}`;
+    }
+
+    getCategoryDescription(categoryKey, indexKey) {
+        return this.categories[categoryKey].indexes[indexKey].description;
     }
 
     // Create filter objects based on definition in categories.js

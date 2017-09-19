@@ -63,6 +63,9 @@ class DataTablesProvider {
                             <td colspan="${index.primary.length}">`;
 
         //--As a part of order online button--
+        let firstExtraInfo = '';
+        let secondExtraInfo = '';
+        let extraInfoItems = [];
         let urlLink = "../request-form/index.html?checkbox=1&search=1";
         let attribute1;
         let attribute2;
@@ -73,22 +76,30 @@ class DataTablesProvider {
         if (!data['DESCRIPTION']) data['DESCRIPTION'] = 'No description provided';
 
         // Display description
-        extraInfo += `<div>
-                        <p>${data['INDEX NAME']}</p>
-                        <p>${data['DESCRIPTION']}</p>
-                      </div><ul>`;
+        //extraInfo += `<div>
+        //                <p>${data['INDEX NAME']}</p>
+        //                <p>${data['DESCRIPTION']}</p>
+        //              </div><ul class="extra-info">`;
+        extraInfo += `<ul class="extra-info">`;
 
         // Display all fields other than excluded fields
         Object.keys(data).sort().forEach((key) => {
+            let formattedKey = key.charAt(0).toUpperCase() + key.substr(1).toLowerCase();
+            let value = '';
+            if (key === 'SOURCE') {
+                value = `<a href="${data[key]}" target="_blank">${data[key]}</a>`;
+            } else {
+                value = data[key];
+            }
             if (excludedFields.indexOf(key) < 0) {
-                let formattedKey = key.charAt(0).toUpperCase() + key.substr(1).toLowerCase();
-                let value = '';
-                if (key === 'SOURCE') {
-                    value = `<a href="${data[key]}" target="_blank">${data[key]}</a>`;
-                } else {
-                    value = data[key];
+                extraInfoItems.push(`<li><b>${formattedKey}</b><ul><li>${value}</li></ul></li>`);
+            } else {
+                if (index.primary[0] && (key === index.primary[0]) && value) {
+                    firstExtraInfo = `<li><b>${formattedKey}</b><ul><li>${value}</li></ul></li>`;
                 }
-                extraInfo += `<li><b>${formattedKey}</b><ul><li>${value}</li></ul></li>`;
+                if (index.primary[1] && (key === index.primary[1]) && value) {
+                    secondExtraInfo = `<li><b>${formattedKey}</b><ul><li>${value}</li></ul></li>`;
+                }
             }
             // --As a part of order online button--
             if (key === '_ID') {
@@ -99,6 +110,7 @@ class DataTablesProvider {
             }
             // -- End OnlineButton--
         });
+        extraInfo += firstExtraInfo + secondExtraInfo + extraInfoItems.join('');
         // --As a part of order online button--
         urlLink += `&resource_id=${data['RESOURCE ID']}`;
 

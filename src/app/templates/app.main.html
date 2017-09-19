@@ -39,6 +39,7 @@
                                            ng-value="vm.getIndexIdentifier(category.categoryKey, indexKey)" 
                                            ng-change="vm.changeIndex(indexKey)"> {{ index.indexName }}
                                 </label>
+                                <p ng-bind="vm.getCategoryDescription(category.categoryKey, indexKey)"></p>
                             </li>
                         </ul>
                     </li>
@@ -94,7 +95,7 @@
             <p>Please try again later or <a href="/recreation/arts/heritage/archives/contacts/">contact the State Archives</a> for more information. Alternatively you can view the <a href=" https://data.qld.gov.au/en/dataset?tags=Queensland+State+Archives">data files for the indexes</a> on the Queensland Government data website.</p>
         </div>
     </div>
-    <p><b>Category: </b><lable ng-bind="vm.resultCategoryName"></lable></p>
+    <p><b>Category: </b><label ng-bind="vm.resultCategoryName"></label></p>
     <p><b>Index: </b><label ng-bind="vm.resultIndexName"></label><p/>
     <table id="{{ vm.datatableId }}" class="stripe" width="100%" cellspacing="0"></table>
 </div>
