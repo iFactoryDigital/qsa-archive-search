@@ -281,6 +281,6 @@ class AppCtrl {
     }
 }
 
-AppCtrl.$inject = ['ProductService', 'CategoryService', 'DataTablesProvider', '$timeout'];
+AppCtrl.$inject = ['ProductService', 'CategoryService', 'DataTablesProvider', '$timeout', '$sce'];
 
 export default AppCtrl;

@@ -8,9 +8,10 @@ const SQL_URL = 'https://data.qld.gov.au/api/action/datastore_search_sql?sql=';
 class CategoryService {
     categories = undefined;
 
-    constructor($http, $q) {
+    constructor($http, $q, $sce) {
         this.http = $http;
         this.q = $q;
+        this.sce = $sce;
     }
 
     getCategories(callback) {
@@ -25,7 +26,7 @@ class CategoryService {
             return;
         }
 
-        this.http.get('./categories.json').then((res) => {
+        this.http.get('/dsiti/qsa/search/categories.json').then((res) => {
             callback(res.data);
         }, (err) => {
             console.error('Cannot load categories.json');
@@ -149,8 +150,8 @@ class CategoryService {
     getResourceFields(resourceId, successCallback, errorCallback) {
 
         let query = `SELECT * FROM "${resourceId}" LIMIT 1`;
-
-        this.http.get(`${SQL_URL}${query}`)
+        var url = this.sce.trustAsResourceUrl(`${SQL_URL}${query}`);
+        this.http.jsonp(url)
             .then((res) => {
                 let fields = [];
 
@@ -224,7 +225,7 @@ class CategoryService {
     }
 }
 
-CategoryService.$inject = ['$http', '$q'];
+CategoryService.$inject = ['$http', '$q', '$sce'];
 
 export default angular.module('services.category', [])
     .service('CategoryService', CategoryService)

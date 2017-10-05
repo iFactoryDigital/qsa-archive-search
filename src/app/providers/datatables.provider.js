@@ -63,14 +63,14 @@ class DataTablesProvider {
                             <td colspan="${index.primary.length}">`;
 
         //--As a part of order online button--
+        const redirectUrl = 'https://test.smartservice.qld.gov.au/services/test/prodi/products';
         let firstExtraInfo = '';
         let secondExtraInfo = '';
         let extraInfoItems = [];
-        let urlLink = "../request-form/index.html?checkbox=1&search=1";
         let attribute1;
         let attribute2;
         let attribute3;
-        const redirectUrl = 'https://test.smartservice.qld.gov.au/services/test/prodi/products';
+        let urlLink = "../qsa/request-form/index.html?checkbox=1&search=1";
 
         if (!data['INDEX NAME']) data['INDEX NAME'] = 'No index name provided';
         if (!data['DESCRIPTION']) data['DESCRIPTION'] = 'No description provided';
