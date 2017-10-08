@@ -1,5 +1,34 @@
 # QSA Archive Search
 
+**This branch includes the files not wanted by the main branch!!**
+
+**Do not make a pull request with this branch!!**
+
+## How to make a pull request
+
+```shell
+# Go to the branch for pull request in Dev Server
+cd /var/www/clients.ifactory.dev/q/qsa/qsa-archive-search-commit
+
+# Copy files from this branch to the directory above which has the branch we make the pull request
+# This script exludes the files not wnated by the main branch
+. merge.sh
+
+# Check what is going to be commited
+# (Use "git reset XXX" to exclude the change from the commit)
+git status
+
+# Commit the change
+git commit
+
+# Push it to our remote Git Repository
+# (Again, this push is targeting another branch "ifactory-mini-cart-integration" where we actually make the pull request)
+git push
+
+# Make the pull request with the branch "ifactory-mini-cart-integration" at GitHub
+# (Not this branch "ifactory-mini-cart-integration-dev"!!)
+```
+
 A single page application that helps search data in Queensland archive CSV files
 
 * This app is developed using AngularJS 1.6 & ES6 syntax
