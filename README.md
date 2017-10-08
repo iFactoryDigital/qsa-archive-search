@@ -7,26 +7,28 @@
 ## How to make a pull request
 
 ```shell
-# Go to the branch for pull request in Dev Server
-cd /var/www/clients.ifactory.dev/q/qsa/qsa-archive-search-commit
+# Go to the working directory for this dev branch in Dev Server
+cd /var/www/clients.ifactory.dev/q/qsa/qsa-archive-search
 
-# Copy files from this branch to the directory above which has the branch we make the pull request
+# Execute the following script
+# This script copies the files to another working directory associating with another branch to make the pull request
+# This script changes the current directory to the directory above
 # This script exludes the files not wnated by the main branch
 . merge.sh
 
 # Check what is going to be commited
-# (Use "git reset XXX" to exclude the change from the commit)
+# (Use "git reset XXX" to exclude the file(s) from the commit)
 git status
 
 # Commit the change
 git commit
 
 # Push it to our remote Git Repository
-# (Again, this push is targeting another branch "ifactory-mini-cart-integration" where we actually make the pull request)
+# (Again, this push is targeting to another branch "ifactory-mini-cart-integration" where we actually make the pull request)
 git push
 
 # Make the pull request with the branch "ifactory-mini-cart-integration" at GitHub
-# (Not this branch "ifactory-mini-cart-integration-dev"!!)
+# (Not the branch "ifactory-mini-cart-integration-dev"!!)
 ```
 
 A single page application that helps search data in Queensland archive CSV files
