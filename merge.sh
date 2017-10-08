@@ -5,6 +5,7 @@ rsync --recursive --verbose --progress \
 --exclude ".git" \
 --exclude ".gitignore.ifactory" \
 --exclude "node_modules" \
+--exclude "README.md" \
 --exclude "dist/index.html" \
 --exclude "src/public/index.html" \
 --exclude "dist/.gitignore" \
@@ -15,7 +16,7 @@ rsync --recursive --verbose --progress \
 --exclude "src/public/products_old.csv" \
 --exclude "merge.sh" \
 --exclude "update_permission_dev.sh" \
-. ../qsa-archive-search/
+. ../qsa-archive-search-commit/
 
 cd ../qsa-archive-search-commit
 git add --all
