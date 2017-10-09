@@ -10,6 +10,9 @@
 # Go to the working directory for this dev branch in Dev Server
 cd /var/www/clients.ifactory.dev/q/qsa/qsa-archive-search
 
+# Compile files
+npm run prod
+
 # Execute the following script
 # This script copies the files to another working directory associating with another branch to make the pull request
 # This script changes the current directory to the directory above
